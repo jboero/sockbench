@@ -30,6 +30,8 @@ cd sockbench-main
 make
 
 %install
+tree
+cd sockbench-main
 mkdir -p %{buildroot}%{_bindir}/
 cp -p %{name} %{buildroot}%{_bindir}/
 
