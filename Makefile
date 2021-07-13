@@ -1,2 +1,2 @@
 all:
-	gcc -g -lpthread main.c -o sockperf
+	gcc -lpthread main.c -o sockbench
