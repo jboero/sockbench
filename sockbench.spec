@@ -11,7 +11,7 @@ License:        Apache
 Source0:        https://github.com/jboero/sockbench/archive/refs/heads/main.tar.gz
 
 # Some builds fail on systemd, but hey, systemd right? 👍
-BuildRequires: systemd unzip make
+BuildRequires: systemd unzip make tree
 Requires(pre): shadow-utils
 Requires(post):	systemd libcap
 URL:		https://github.com/jboero/sockperf
@@ -25,7 +25,7 @@ Terraform provisions multicloud resources using a common language of HCL.
 %autosetup -c %{name}-%{version}
 
 %build
-cd sockbench
+tree
 make
 
 %install
