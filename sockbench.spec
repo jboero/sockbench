@@ -11,7 +11,7 @@ License:        Apache
 Source0:        https://github.com/jboero/sockbench/archive/refs/heads/main.tar.gz
 
 # Some builds fail on systemd, but hey, systemd right? 👍
-BuildRequires: systemd unzip make tree
+BuildRequires: systemd unzip make tree gcc
 Requires(pre): shadow-utils
 Requires(post):	systemd libcap
 URL:		https://github.com/jboero/sockperf
