@@ -14,7 +14,7 @@ sockperf -s
 ```
 Start a TCP server at your port:
 ```
-sockperf -s9000`
+sockperf -s9000
 ```
 Start a UDS client binding to ./sockperf.sock, using default blocksize 32k and default count 32k:
 ```
