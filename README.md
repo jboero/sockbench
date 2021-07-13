@@ -9,16 +9,22 @@ Server is multithreaded and can use either AF_UNIX (default) or AF_INET (option 
 
 # Examples
 Start a UNIX Domain Socket server at ./sockperf.sock:
-`sockperf -s`
-
+```
+sockperf -s
+```
 Start a TCP server at your port:
-`sockperf -s9000`
-
+```
+sockperf -s9000`
+```
 Start a UDS client binding to ./sockperf.sock, using default blocksize 32k and default count 32k:
-`sockperf -c`
-
+```
+sockperf -c
+```
 Start a UDS client with custom block size and quantity:
-`sockperf -c -b4096 -q16384`
-
+```
+sockperf -c -b4096 -q16384
+```
 Start a TCP client on your port (block size and quantity optional):
-`sockperf -c9000`
+```
+sockperf -c9000
+```
