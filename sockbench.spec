@@ -26,6 +26,7 @@ Terraform provisions multicloud resources using a common language of HCL.
 
 %build
 tree
+cd sockbench-main
 make
 
 %install
